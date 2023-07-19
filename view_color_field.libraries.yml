@@ -1,0 +1,9 @@
+view_color_field:
+  version: 1.x
+  js:
+    js/view_color_field.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
+

@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+function view_color_field_preprocess_views_view(&$variables) {
+  if($variables['id'] == 'commerce_products'){
+    //dump($variables);
+  //  $parameter = \Drupal::entityTypeManager()->getStorage('commerce_product_variation');
+  //  $parameter = \Drupal::entityTypeManager()->getStorage('commerce_product_variation');
+   // dump($parameter);
+  //  $stock = $parameter->field_stock;
+ //   dump($stock);
+    $datos = 'productos';
+    $variables['#attached']['library'] = 'view_color_field/view_color_field';
+    $variables['#attached']['drupalSettings']['datos']['view_color_field']= $datos;
+  }elseif ($variables['id'] == 'commerce_orders'){
+    $datos = 'pedidos';
+    $variables['#attached']['library'] = 'view_color_field/view_color_field';
+    $variables['#attached']['drupalSettings']['datos']['view_color_field']= $datos;
+  }
+}
+

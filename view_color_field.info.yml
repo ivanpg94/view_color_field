@@ -1,0 +1,6 @@
+name: 'View Color Field'
+description: 'Change view fields color.'
+type: module
+package: 'Commerce (custom)'
+core: 8.x
+core_version_requirement: ^8 || ^9
